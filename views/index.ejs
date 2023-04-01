@@ -1,0 +1,43 @@
+<!-- include header -->
+
+<%-include('include/_header')%>
+
+<!-- main -->
+
+
+<main id="main-site">
+    <div class="container">
+        <div class="box box-flex">
+            <a href="/add-user" class="btn btn-add-user box-shadow"><span class="text-span-add-user">Add User<i
+                        class="fa-solid fa-user"></i></span></a>
+        </div>
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <td>ID</td>
+                        <td>UserName</td>
+                        <td>Mail</td>
+                        <td>gender</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    
+                   <!-- _show.ejs -->
+                <%-include('include/_show')%>
+                  <!--  -->
+
+
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+</main>
+
+<!-- include footer -->
+
+<%-include('include/_footer')%>

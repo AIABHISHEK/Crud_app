@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+:root {
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border-color: #d7dce2;
+    --btn-border-color: #c7cdcf;
+    color-scheme: light dark;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto Slab',
+        serif;
+}
+
+/* #header{
+    background-color: aqua;
+    height: 2em;
+} */
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.text-center {
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+.box-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#main-site {
+    margin: 2em 0;
+}
+
+.btn {
+    border: 0px solid rgb(217, 214, 214);
+    border-radius: 4px;
+    box-shadow: -2px 2px 15px rgb(141, 140, 140);
+}
+
+.table {
+    margin-top: 2em;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+thead {
+    font-weight: 700;
+    line-height: 50px;
+}
+
+tbody {
+    line-height: 30px;
+}
+
+.btn-add-user {
+    font-size: larger;
+}
+
+.text-span-add-user {
+    padding: 5px 10px;
+}
+
+.btn .text-span-add-user i {
+    padding-left: 10px;
+}
+
+.btn-update {
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+}
+
+.btn-delete {
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+}
+
+.box-shadow {
+    border: 1px solid var(--border-color);
+    box-shadow: 1px 3px 10px var(--btn-border-color);
+}
+
+
+
+/* login  */
+
+.form-title {
+    margin-top: 2em;
+}
+
+.form-title>h2 {
+    padding: 0.5em 0;
+}
+
+.new-user {
+    max-width: 786px;
+    margin: auto;
+}
+
+#update-user .form-group,
+#add-user .form-group {
+    margin: 0.4em 0;
+}
+
+#update-user .form-group input[type="text"],
+#add-user .form-group input[type="text"] {
+    width: 100%;
+    padding: 0.6em 1em;
+    margin: 0.5em 0;
+    border: 2px solid var(--border-color);
+    font-family: 'Roboto Slab',
+        serif;
+}
+
+#update-user .form-group input[type="radio"],
+#add-user .form-group input[type="radio"] {
+    margin: 1em 2em;
+}
+
+
+
+/* radio */
+
+.radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+
+}
+
+.radio-inline {
+    display: inline-block;
+}
+
+.radio input[type="radio"]+.radio-label::before {
+    content: "";
+    background: var(--btn-border-color);
+    border-radius: 100%;
+    border: 1px solid var(--border-color);
+
+
+}
+
+#add-user .form-group .btn,
+#update-user .form-group .btn {
+    width: 100;
+    padding: 0.9em 1em;
+    background-color: rgb(37, 238, 238);
+    border: none;
+    cursor: pointer;
+}

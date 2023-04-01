@@ -1,0 +1,21 @@
+
+<% for(var i = 0; i <users.length; i++) { %>
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].email %></td>
+    <td><%= users[i].gender %></td>
+    <td><%= users[i].status %></td>
+    <td>
+        <a href="/update-user?id=<%= users[i]._id %>" class="btn button-align update box-shadow">
+            <!-- in href we need to add id show when we want to update we can get the all data with that id -->
+            <span class="span-update"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a href="" class="btn button-align delete box-shadow">
+            <span class="span-delete">
+                
+                <i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>
